@@ -16,7 +16,7 @@ const initialState = {
 export const SET_WINNER = 'SET_WINNER'; //module
 export const CLICK_CELL = 'CLICK_CELL'; //module 
 export const SET_TURN = 'SET_TURN'; //module
-export const RESET = 'RESET';
+export const RESET = 'RESET'; //module
 
 //reducer translates action and convert it to real action 
 const reducer = (state, action) => {
