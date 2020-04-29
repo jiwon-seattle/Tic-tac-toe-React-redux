@@ -3,7 +3,7 @@
 
 #### By Jiwon Han 4.29.2020 - 4.30.2020
 
-<img src="src/img/hook.png" width="550px" />
+<img src="src/img/hook.png" width="300px" />
 
 A game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of 4 rows x 4 colums.
  
@@ -25,7 +25,7 @@ When cell is clicked on the board, the next step is to check same rows and colum
 
 #### Comments on useReducer hook
 
-<img src="src/img/Diagram.png" width="550px" /> 
+<img src="src/img/Diagram.png" width="300px" /> 
 
 It drills down props to the children. I even had to pass down dispatch from TicTacToe to TD. 
 `useReducer` is one of the good React library that it still focus on the strong parent & child concept. It would be useful to use with `Context API`.  
