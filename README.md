@@ -3,6 +3,10 @@
 
 #### By Jiwon Han 4.29.2020 - 4.30.2020
 
+<img src="src/img/hook.png" width="550px" />
+
+A game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of 4 rows x 4 colums.
+ 
 There are two development modes: useReducer hook & 
 
 ### useReducer hook
@@ -27,5 +31,9 @@ It drills down props to the children. I even had to pass down dispatch from TicT
 `useReducer` is one of the good React library that it still focus on the strong parent & child concept. It would be useful to use with `Context API`.  
 
 #### Packages that I used
+
 `react-hot-loader`
+
+
+
 
