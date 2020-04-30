@@ -7,7 +7,7 @@
 
 A game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of 4 rows x 4 colums.
  
-There are two development modes: useReducer hook & react redux (4.30.2020)
+There are two development modes: useReducer hook & react redux 
 
 ### 1. useReducer hook
 
@@ -66,8 +66,8 @@ $ npm start
 
 Called SET_WINNER, SET_TURN, RESET dispatches in TicTacToe and CLICK_CELL in Td component.
 
-- [] Still figuring out checking every row and columns to determine winner.
-- [] react-thunk
+- [ ] Still figuring out checking every row and columns to determine winner.
+- [ ] react-thunk
 
 #### What's Included
 
