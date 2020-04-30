@@ -85,7 +85,7 @@ Called SET_WINNER, SET_TURN, RESET dispatches in TicTacToe and CLICK_CELL in Td 
 |   |-- store.js : report externally
 ```
 
-#### To run useReducer dev mode locally:
+#### To run react-redux dev mode locally:
 
 ```bash 
 $ git clone https://github.com/jiwon-seattle/Tic-tac-toe-React-redux.git
