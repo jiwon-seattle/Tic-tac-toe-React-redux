@@ -60,14 +60,14 @@ $ npm start
 
 ### 1. react redux 
 
-<img src="src/img/hookDiagram.png" width="300px" />
+<img src="src/img/reduxDiagram.png" width="300px" />
 
 `Redux` is a popular JavaScript library for managing the state of your application. Since react consists of many components and it is easy to get complicated. It's good to use to manage state updates per actions.
 
 Called SET_WINNER, SET_TURN, RESET dispatches in TicTacToe and CLICK_CELL in Td component.
 
-[ ] Still figuring out checking every row and columns to determine winner.
-[ ] react-thunk
+[] Still figuring out checking every row and columns to determine winner.
+[] react-thunk
 
 #### What's Included
 
