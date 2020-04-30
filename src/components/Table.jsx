@@ -1,14 +1,20 @@
-import React from 'react';
+import React, {PureComponent} from 'react';
 import Tr from './Tr';
 
-const Table = ( {onClick, tableData, dispatch }) => {
-  return (
-  <table>
-    {/* tableData.length = 4 */}
-    {/* i = columns  */}
-   {Array(tableData.length).fill().map((tr, i) => (<Tr dispatch={dispatch} rowIndex = {i}rowData={tableData[i]}/>))}
-  </table>
-  )
+class Table extends PureComponent {
+  render() {
+    const {tableData} = this.props;;
+    return (
+      <>
+        <table>
+          {
+            Array(tableData.length).fill().map((tr, i) => { return <Tr key={i} rowIndex={i} rowData={tableData[i]}/>
+          })
+        }
+        </table>
+      </>
+    )
+  }
 }
 
 export default Table; 

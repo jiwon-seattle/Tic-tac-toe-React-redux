@@ -1,12 +1,20 @@
-import React from 'react';
+import React, {PureComponent} from 'react';
 import Td from './Td';
 
-const Tr = ({rowData, rowIndex, dispatch }) => {
-  return(
-    <tr>
-      {Array(rowData.length).fill().map((td, i) => (<Td dispatch ={dispatch} rowIndex ={rowIndex} cellIndex={i} cellData = {rowData[i]}>{''}</Td>))}
-    </tr>
-  )
+class Tr extends PureComponent {
+  render(){
+    const { rowIndex, rowData } = this.props;
+    return (
+      <>
+        <tr>
+          {
+            Array(rowData.length).fill().map((cd, i) => {
+              return <Td key = {i} rowIndex={rowIndex} columnIndex={i} columnData={rowData[i]}/>
+            })
+          }
+        </tr>
+      </>
+    )
+  }
 }
-
 export default Tr; 

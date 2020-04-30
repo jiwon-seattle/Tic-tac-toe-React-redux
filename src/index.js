@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-//import create './store';
 import { hot } from 'react-hot-loader/root';
-import TicTacToe from './components/TicTacToe'
+import TicTacToe from './components/TicTacToe';
+import create from './store/store';
+
+const Store = create();
 
 const Hot = hot(TicTacToe);
 ReactDOM.render(
+  <Provider store={Store}>
     <Hot />,
-  document.querySelector('#root')
+  </Provider>,
+  document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
