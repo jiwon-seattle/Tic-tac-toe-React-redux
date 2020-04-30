@@ -9,7 +9,7 @@ A game in which two players seek in alternate turns to complete a row, a column,
  
 There are two development modes: useReducer hook & react redux (4.30.2020)
 
-### useReducer hook
+### 1. useReducer hook
 
 `const [state, dispatch] = useReducer(reducer, initialState);`
 
@@ -17,11 +17,26 @@ There are two development modes: useReducer hook & react redux (4.30.2020)
 
 Declared all statuses, actions, dispatch, reducers using `useReducer` in TicTacToe, upper most parent component and passed down those to children. 
 
-Used `useEffect` Since dispatch is triggered Asynchronously.
+Used `useEffect` Since dispatch is triggered **asynchronously**.
 
 `useEffect` replaces componentDidMount and componentWillUpdate to handle any sort of events that occur after the component is mounted.
 
 When cell is clicked on the board, the next step is to check same rows and columns to see if clicked cell matches with them. However, latest clicked cell or turn changes to the next before checking. To prevent this, `useEffect` was used.  
+
+#### What's Included
+
+```bash 
+|-- components :
+|   |-- TicTacToe.jsx
+|   |   |-- const initialState
+|   |   |-- action type modules (const SET_WINNER, const CLICK_CELL, const SET_TURN, const RESET)
+|   |   |-- const reducer
+|   |   |-- const [state, dispatch] = useReducer(reducer, initialState);
+|   |   |-- useEffect()
+|   |-- Table.jsx
+|   |-- Tr.jsx 
+|   |-- Td.jsx 
+```
 
 #### Comments on useReducer hook
 
