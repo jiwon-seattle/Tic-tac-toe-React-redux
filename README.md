@@ -1,5 +1,5 @@
 
-## Tic Tac Toe
+## Tic Tac Toe :game_die:
 
 #### By Jiwon Han 4.29.2020 - 4.30.2020
 
@@ -66,8 +66,8 @@ $ npm start
 
 Called SET_WINNER, SET_TURN, RESET dispatches in TicTacToe and CLICK_CELL in Td component.
 
-[] Still figuring out checking every row and columns to determine winner.
-[] react-thunk
+- [] Still figuring out checking every row and columns to determine winner.
+- [] react-thunk
 
 #### What's Included
 
