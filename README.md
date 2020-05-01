@@ -58,7 +58,7 @@ $ npm start
 
 `react-hot-loader`
 
-### 1. react redux 
+### 2. react redux 
 
 <img src="src/img/reduxDiagram.png" width="300px" />
 
