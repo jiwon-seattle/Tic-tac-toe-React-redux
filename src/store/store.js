@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 const create= () => {
   return createStore(
     reducer,
-    applyMiddleware(thunk),
+    // applyMiddleware(thunk),
     
   );
 }

@@ -3,7 +3,7 @@ import Tr from './Tr';
 
 class Table extends PureComponent {
   render() {
-    const {tableData} = this.props;;
+    const {tableData} = this.props;
     return (
       <>
         <table>

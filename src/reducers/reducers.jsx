@@ -16,23 +16,21 @@ const initialState = {
 }
 
 const reducer = (state=initialState, action)=> {
+  console.log("=== DEBUG: Current state")
   console.log(state);
-  //console.log('action is ' +state.action);
   switch(action.type){
     case actions.CLICK_CELL:
-      //console.log('latest input is'+ state.latestInput[0])
       const tableData = [...state.tableData];
+      console.log("=== DEBUG: Table data details ===")
       console.log(tableData);
+      console.log("=== DEBUG: action details ===")
       console.log(action)
       tableData[action.rowIndex] = [...tableData[action.rowIndex]];
-      tableData[action.rowIndex][action.columnIndex] = state.turn;
-      // console.log('action.turn' +action.turn);
-      // console.log('state.turn' + state.turn);
-      // console.log(action.rowIndex);
+      tableData[action.rowIndex][action.columnIndex] = action.turn;
       return {
         ...state,
         tableData,
-        turn: state.turn,
+        turn1: action.turn,
         latestInput: [action.rowIndex, action.columnIndex]
       }
     case actions.SET_WINNER:
