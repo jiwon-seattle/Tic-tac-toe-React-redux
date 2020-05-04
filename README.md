@@ -67,9 +67,10 @@ _If you encouter with initial npm packages issues, please delete `package-lock.j
 
 Called SET_WINNER, SET_TURN, RESET dispatches in TicTacToe and CLICK_CELL in Td component.
 
-[x] Still figuring out checking every row and columns to determine winner.
 
--> When attemp to get turn props from store, I encounterd below error.
+When attemp to get turn props from store, I encounterd below error.
+
+<img src="src/img/error.png" width="300px" /> 
 
 ```bash
 const mapStateToProps = (state) => ({
@@ -86,7 +87,7 @@ const mapStateToProps = (state) => ({
 })
 ```
 
-future homwork to solve this -> [] react-thunk
+future homwork to solve this -> **react-thunk**
 
 #### What's Included
 
