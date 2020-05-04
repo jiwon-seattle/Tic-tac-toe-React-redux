@@ -1,5 +1,5 @@
 
-## Tic Tac Toe
+## Tic Tac Toe :game_die:
 
 #### By Jiwon Han 4.29.2020 - 4.30.2020
 
@@ -53,6 +53,7 @@ $ npm install
 $ git reset --hard afd95b0eafcb735e7fca85752834b0dcfe7ec8b2
 $ npm start
 ```
+_If you encouter with initial npm packages issues, please delete `package-lock.json` file in the directory_
 
 #### Packages that I used
 
