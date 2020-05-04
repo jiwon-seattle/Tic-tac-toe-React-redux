@@ -70,7 +70,7 @@ Called SET_WINNER, SET_TURN, RESET dispatches in TicTacToe and CLICK_CELL in Td 
 
 When attemp to get turn props from store, I encounterd below error.
 
-<img src="src/img/error.png" width="300px" /> 
+<img src="src/img/error.png" width="560px" /> 
 
 ```bash
 const mapStateToProps = (state) => ({
