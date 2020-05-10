@@ -43,7 +43,7 @@ When cell is clicked on the board, the next step is to check same rows and colum
 <img src="src/img/hookDiagram.png" width="300px" /> 
 
 It drills down props to the children. I even had to pass down dispatch from TicTacToe to TD. 
-`useReducer` is one of the good React library that it still focus on the strong parent & child concept. It would be useful to use with `Context API`.  
+`useReducer` is one of the good React library that it still focuses on the strong parent & child concept. It would be useful to use with `Context API`.  
 
 #### To run useReducer dev mode locally:
 
@@ -59,16 +59,16 @@ _If you encouter with initial npm packages issues, please delete `package-lock.j
 
 `react-hot-loader`
 
-### 1. react redux 
+### 2. react redux 
 
 <img src="src/img/reduxDiagram.png" width="300px" />
 
-`Redux` is a popular JavaScript library for managing the state of your application. Since react consists of many components and it is easy to get complicated. It's good to use to manage state updates per actions.
+`Redux` is a popular JavaScript library for managing the state of your application. Since react consists of many components, it is easy to get complicated. It's good to use to manage state updates per actions.
 
 Called SET_WINNER, SET_TURN, RESET dispatches in TicTacToe and CLICK_CELL in Td component.
 
 
-When attemp to get turn props from store, I encounterd below error.
+When attempt to get turn props from store, I encounterd below error.
 
 <img src="src/img/error.png" width="560px" /> 
 
@@ -78,7 +78,7 @@ const mapStateToProps = (state) => ({
 })
 ```
 
-I guess that's because setTurn and getting turn happens at the same time.
+I guess that's because setTurn and getting turn happens at the same time. React-redux.
 I set another turn1 as impromptu state. 
 
 ```bash 
@@ -87,6 +87,7 @@ const mapStateToProps = (state) => ({
 })
 ```
 
+Dispatching redux action is synchronous. In case if you are willing to address the asynchronous call, you can use the thunk-middleware in redux, where dispatch is provided as a callback function which you can invoke as per your convenience.
 future homwork to solve this -> **react-thunk**
 
 #### What's Included
@@ -105,7 +106,7 @@ future homwork to solve this -> **react-thunk**
 |   |-- store.js : report externally
 ```
 
-#### To run useReducer dev mode locally:
+#### To run react-redux dev mode locally:
 
 ```bash 
 $ git clone https://github.com/jiwon-seattle/Tic-tac-toe-React-redux.git
